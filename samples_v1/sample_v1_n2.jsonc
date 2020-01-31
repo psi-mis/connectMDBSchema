@@ -1,0 +1,142 @@
+{
+
+    "_id": ObjectId('5d534ec12350224b544f35e4'),
+    "schemaVersion": 1-RC.1,
+    "clientDetails": {
+        "phoneNumberCurrent": "+1234091234",
+        "phoneNumberHistory": ["+1234091234"],
+        "voucherCodeCurrent": "12345678",
+        "voucherCodeHistory": ["12345678"],
+        "cuic": "FRBrRaFSaSm198878",
+        "firstName": "Bruna",
+        "lastName": "Raimbault",
+        "motherFirstName": "Sara",
+        "motherLastName": "Smith",
+        "birthDistrict": "Yvelines (78)",
+        "birthDate": "1988-08-25",
+        "gender": "F",
+        "country": "DV"
+    },
+
+    "transactions": [
+
+        {
+            "activityDate": {
+                "capturedUTC": "2019-06-17T12:32:00.000",
+                "capturedLoc": "2019-06-17T11:32:00.000",
+                "createdOnDeviceUTC": "2019-06-17T12:32:30.000",
+                "createdOnMdbUTC": "2019-06-17T12:32:30.000"
+            },
+            
+            "activityId": "5349521735217",
+            "activityType": "sp",
+            "program": "fpl",
+            
+            "dc": {
+                "app": "pwa-connect",
+                "softwareVersion": "1.3.2",
+                "configVersion": "5"
+            },
+            "ws": {
+                "app": "dws",
+                "softwareVersion": "1.1.0",
+                "configVersion": "2"
+            },
+
+            "location": {
+                "location": {
+                    "type:": "Point",
+                    "coordinates": [-0.9969609975814819, 33.9327278137207]
+                },
+                "accuracy": 100
+            },
+
+            "activeUser": "qwertyuio1",
+            "creditedUsers": ["qwertyuio1"],
+
+            "transactions": [
+                {
+                    "transactionType": "c_reg",
+                    "dataValues": {
+                        "phoneNumberCurrent": "+1234091234",
+                        "voucherCodeCurrent": "12345678",
+                        "cuic": "FRBrRaFSaSm198878",
+                        "firstName": "Bruna",
+                        "lastName": "Raimbault",
+                        "motherFirstName": "Sara",
+                        "motherLastName": "Smith",
+                        "birthDistrict": "Yvelines (78)",
+                        "birthDate": "1988-08-25",
+                        "gender": "F",
+                        "country": "DV"
+                    }
+                },
+                {
+                    "transactionType": "s_ifo",
+                    "dataValues": {
+                        "sessionType": "group",
+                        "serviceDesired": "IUD"
+                    }
+                },
+                {
+                    "transactionType": "v_iss",
+                    "dataValues": {
+                        "voucherCode": "12345678"
+                    }
+                }
+            ]
+        },
+
+        {
+            "activityDate": {
+                "capturedUTC": "2019-06-17T12:32:00.000",
+                "capturedLoc": "2019-06-17T11:32:00.000",
+                "createdOnDeviceUTC": "2019-06-17T12:32:30.000",
+                "createdOnMdbUTC": "2019-06-17T12:32:30.000"
+            },
+            
+            "activityId": "5349521735218",
+            "activityType": "sp",
+            "program": "fpl",
+            
+            "dc": {
+                "app": "pwa-connect",
+                "softwareVersion": "1.3.2",
+                "configVersion": "5"
+            },
+            "ws": {
+                "app": "dws",
+                "softwareVersion": "1.1.0",
+                "configVersion": "2"
+            },
+
+            "location": {
+                "location": {
+                    "type:": "Point",
+                    "coordinates": [-0.9969609975814818, 33.9327278137207]
+                },
+                "accuracy": 100
+            },
+
+            "activeUser": "qwertyuio2-pro",
+            "creditedUsers": ["qwertyuio2-pro", "qwertyuio1-ipc"],
+
+            "transactions": [
+                {
+                    "transactionType": "s_pro",
+                    "dataValues": {
+                        "serviceProvided": "IUD"
+                    }
+                },
+                {
+                    "transactionType": "v_rdx",
+                    "dataValues": {
+                        "voucherCode": "12345678"
+                    }
+                }
+            ]
+        }
+
+    ]
+
+}

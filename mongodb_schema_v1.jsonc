@@ -54,22 +54,22 @@
                 // Mandatory: TRUE 
                 // The UTC date-time associated to the activity/transaction (the time it happened in "real life") 
                 // (automatically derived from local date-time by capturing app) 
-                "UTC": "2019-06-17T12:32:00.000Z",
+                "capturedUTC": "2019-06-17T12:32:00.000Z",
                 // "transactionDate.Loc" 
                 // Mandatory: TRUE 
                 // The local date-time associated to the activity/transaction (the time it happened in "real life") 
                 // (automatically filled by capturing app or specified by the user) 
-                "Loc": "2019-06-17T11:32:00.000Z",
+                "capturedLoc": "2019-06-17T11:32:00.000Z",
                 // "transactionDate.UTCOnDevice"
                 // The UTC date-time the transaction was created in the device  
                 // (can differ from transaction date if the transaction date is set manually by the user) 
                 // (automatically captured by capturing app) 
-                "UTCOnDevice": "2019-06-17T12:32:30.000Z",
+                "createdOnDeviceUTC": "2019-06-17T12:32:30.000Z",
                 // "transactionDate.UTCOnMdb"
                 // Mandatory: TRUE 
                 // The UTC date-time the transaction was created in mdb 
                 // (automatically captured by ws) 
-                "UTCOnMdb": "2019-06-17T12:32:30.000Z"
+                "createdOnMdbUTC": "2019-06-17T12:32:30.000Z"
             },
 
             // "transactionType"
@@ -94,12 +94,12 @@
 
             // "activity"
             // Mandatory: TRUE 
-            // An activity is broken down in one or more transaction but represent one interaction with a client 
+            // An activity is broken down in one or more transaction but represent one interaction with a client
             // Activities are country specific 
             // Eg. "Activity: Service provision" can be composed of transactions:  
-            // - "reg" + "ses" if the client is new (=walk-in new) 
-            // - "ses" if the client exists but is not coming with a voucher (=walk-im existing) 
-            // - "v_rdx" if the client has a voucher (=voucher redeem) 
+            // - "c_reg" + "s_pro" if the client is new (=walk-in new) 
+            // - "s_pro" if the client exists but is not coming with a voucher (=walk-in existing) 
+            // - "s_pro" + "v_rdx" if the client has a voucher (=voucher redeem) 
             "activity": "sp",
 
             // "program"

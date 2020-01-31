@@ -1,0 +1,52 @@
+Basic flow
+----------
+
+IPC
+> search by client details
+
+> case1 client new
+> insert to create the first record
+
+> case2 client exist
+> update to add the new activity to the client doc
+
+
+PROV
+> search by client details (voucherCode)
+
+> case 0 voucher found
+> update to add the new activity to the client doc
+
+Both
+> Search for activityId in log for processing state
+
+
+
+Sync flow
+---------
+
+IPC
+> search new "records" where I am credited
+Use date of last sync
+   - UTC date
+Use now
+   - UTC date
+
+// No history of data
+Today: 31/01 - 10:00
+Device want the last 30 days
+
+getRecords(31/01-10:00,30/01-10:00,"IPC134234");
+getRecords(30/01-10:00,29/01-10:00,"IPC134234");
+getRecords(29/01-10:00,28/01-10:00,"IPC134234");
+getRecords(28/01-10:00,27/01-10:00,"IPC134234");
+
+...
+
+getRecords(03/01-10:00,02/01-10:00,"IPC134234");
+getRecords(02/01-10:00,01/01-10:00,"IPC134234");
+
+// There is data, we want to check if there are vouchers redeemed
+Last check was Yesterday: 30/01 - 10:00
+getRecords(30/01-10:00,31/01-10:00,"IPC134234",activityType or transactionType);
+
