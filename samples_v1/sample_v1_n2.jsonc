@@ -1,7 +1,7 @@
 {
 
     "_id": ObjectId('5d534ec12350224b544f35e4'),
-    "schemaVersion": 1-RC.1,
+    "schemaVersion": 1-RC.2,
     "clientDetails": {
         "phoneNumberCurrent": "+1234091234",
         "phoneNumberHistory": ["+1234091234"],
