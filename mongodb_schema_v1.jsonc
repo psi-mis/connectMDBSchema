@@ -155,7 +155,7 @@
           // Transaction types include:
           //
           // - "c_reg" = "client registration" 
-          // - "c_upt" = "client details update" 
+          // - "c_upd" = "client details update" 
           // - "c_end" = "client client opted-out"
           // 
           // - "s_ifo" = "service information"
@@ -249,7 +249,7 @@
       "creditedUsers": ["FR_TEST_IPC"],
       "transactions": [
         {
-          "type": "c_upt",
+          "type": "c_upd",
           "clientDetails": {
             "phoneNumber": "+1234091234"
           }
