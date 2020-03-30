@@ -210,7 +210,7 @@
 
         {
           "type": "v_iss",
-          "dataValues": {
+          "clientDetails": {
             "voucherCode": "12345678"
           }
         }
@@ -262,7 +262,7 @@
         },
         {
           "type": "v_rdx",
-          "dataValues": {
+          "clientDetails": {
             "voucherCode": "12345678"
           }
         }
