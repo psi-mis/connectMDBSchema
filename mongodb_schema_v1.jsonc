@@ -40,7 +40,7 @@
     "cuic": "FRBrRaFSaSm198878",
 
     // Self-explainatory clientDetails:
-    "firstName": "Bruna",            // Free text
+    "firstName": "Bruna",             // Free text
     "lastName": "Raimbault",          // Free text
     "motherFirstName": "Sara",        // Free text
     "motherLastName": "Smith",        // Free text
